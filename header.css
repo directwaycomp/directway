@@ -1,0 +1,133 @@
+/* Reset styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    font-family: 'Roboto Slab', serif; /* More creative font family */
+    background-color: #f4f4f9;
+    color: #333;
+    padding-top: 80px; /* Adjust based on header height */
+    margin: 0;
+}
+
+/* Header styling */
+header {
+    position: fixed; /* Makes the header stay at the top */
+    top: 0;
+    width: 100%;
+    background: linear-gradient(135deg, #000000, #015bc9); 
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    z-index: 1000;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 15px 20px;
+}
+
+/* Logo styling */
+.logo h1 {
+    font-size: 26px;
+    color: #fff; /* White color for contrast with gradient background */
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+/* Navigation styling */
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+nav ul li {
+    position: relative;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ffeb3b; /* Yellow accent color on hover */
+}
+
+nav ul li a img {
+    width: 22px;
+    height: 22px;
+    margin-right: 8px;
+    border-radius: 6px; /* Small border radius for icons */
+    transition: transform 0.3s ease;
+}
+
+nav ul li a:hover img {
+    transform: scale(1.1);
+}
+
+/* Language switcher styling */
+.language-switch {
+    display: flex;
+    gap: 15px;
+}
+
+.language-switch a {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 14px;
+    transition: color 0.3s ease;
+}
+
+.language-switch a:hover {
+    color: #ffeb3b;
+    transform: scale(1.05);
+}
+
+.language-switch a img {
+    width: 34px; /* Increased width for the language flags */
+    height: 24px; /* Slightly taller height for better visibility */
+    border-radius: 6px; /* Slightly rounded corners */
+    border: 1px solid #ddd;
+    transition: border-color 0.3s ease;
+}
+
+.language-switch a:hover img {
+    border-color: #ffeb3b;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    nav ul {
+        gap: 15px;
+    }
+    
+    .logo h1 {
+        font-size: 26px;
+        margin-bottom: 10px;
+        
+    }
+    
+}

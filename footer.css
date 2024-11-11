@@ -1,0 +1,87 @@
+/* Footer styling */
+footer {
+    background: linear-gradient(135deg, #000000, #015bc9); 
+    color: #fff;
+    padding: 30px 0;
+    text-align: center;
+    font-family: 'Roboto Slab', serif; /* Matches header font */
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+/* Company name styling */
+.footer-container p.company-name {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px 0;
+    color: #ffeb3b; /* Accent color to make it stand out */
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Location, email, and phone styling */
+.footer-container p {
+    margin: 5px 0;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+.footer-container a {
+    color: #ffeb3b; /* Yellow accent for links */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-container a:hover {
+    color: #fff; /* Changes to white on hover */
+}
+
+/* Styling for the company description */
+.company-description {
+    margin-top: 15px;
+    font-size: 14px;
+    line-height: 1.8;
+    color: #e0e0e0; /* Slightly lighter color for readability */
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    font-style: italic;
+}
+
+/* Horizontal divider line for separation */
+.footer-divider {
+    width: 50%;
+    height: 1px;
+    background-color: #ffeb3b; /* Accent color for the divider line */
+    margin: 15px auto;
+    opacity: 0.6;
+}
+
+/* Ensure footer stays at the bottom of the page */
+body, html {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+footer {
+    margin-top: auto;
+}
+
+/* Responsive design for footer */
+@media (max-width: 768px) {
+    .footer-container p, .company-description {
+        font-size: 13px;
+    }
+    .footer-container p.company-name {
+        font-size: 18px;
+    }
+}

@@ -1,0 +1,51 @@
+/* Global styling for the About Us page */
+body {
+    font-family: 'Roboto Slab', serif;
+    color: #333;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+}
+
+/* Main container styling */
+.about-container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 0 20px;
+    text-align: left;
+    line-height: 1.8;
+}
+
+/* Heading styling */
+.about-container h1 {
+    font-size: 32px;
+    color: #023c84;
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: 700;
+    margin-top: 50px;
+}
+
+/* Paragraph styling */
+.about-content p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+/* Responsive design adjustments */
+@media (max-width: 768px) {
+    .about-container {
+        padding: 0 15px;
+    }
+    
+    .about-container h1 {
+        font-size: 28px;
+        margin-top: 100px;
+    }
+    
+    .about-content p {
+        font-size: 15px;
+    }
+}
